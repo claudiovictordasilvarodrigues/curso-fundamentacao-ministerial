@@ -70,59 +70,6 @@ a {
 
 
 /* =========================================
-   HERO
-========================================= */
-
-.hero {
-    min-height: 620px;
-
-    display: flex;
-    align-items: center;
-
-    text-align: center;
-
-    background:
-        linear-gradient(
-            rgba(45, 31, 23, 0.78),
-            rgba(45, 31, 23, 0.78)
-        ),
-        url("../assets/images/Ceva\ -\ Átomo\ branco.png") center/cover no-repeat;
-
-    color: rgb(236, 228, 228);
-}
-
-.hero .container {
-    max-width: 850px;
-}
-
-.hero-label {
-    font-size: 0.8rem;
-    font-weight: bold;
-    letter-spacing: 3px;
-
-    margin-bottom: 20px;
-
-    color: var(--secondary);
-}
-
-.hero h1 {
-    font-size: clamp(2.2rem, 5vw, 4.3rem);
-    line-height: 1.1;
-
-    margin-bottom: 25px;
-}
-
-.hero h1 span {
-    display: block;
-}
-
-.hero-subtitle {
-    font-size: 1.1rem;
-    margin-bottom: 35px;
-}
-
-
-/* =========================================
    BOTÕES
 ========================================= */
 
