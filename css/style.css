@@ -758,3 +758,774 @@ legend {
     font-weight: bold;
     margin-bottom: 35px;
 }
+
+
+/* =========================================================
+   MODERN DESIGN
+   HERO + INTRODUÇÃO
+   CSS ISOLADO
+========================================================= */
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.modern-container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.modern-hero {
+    position: relative;
+
+    min-height: 680px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            rgba(35, 25, 19, 0.94),
+            rgba(79, 53, 37, 0.78)
+        )
+}
+
+
+/* elemento decorativo */
+
+.modern-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 520px;
+    height: 520px;
+
+    top: -280px;
+    right: -180px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(214, 185, 140, 0.15);
+
+    box-shadow:
+        0 0 0 80px rgba(214, 185, 140, 0.025),
+        0 0 0 160px rgba(214, 185, 140, 0.015);
+}
+
+
+/* segundo elemento decorativo */
+
+.modern-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+    height: 280px;
+
+    bottom: -180px;
+    left: -100px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(214, 185, 140, 0.12);
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.modern-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(900px, 100%);
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   HERO LABEL
+========================================================= */
+
+.modern-hero-label {
+    margin-bottom: 24px;
+
+    color: #d6b98c;
+
+    font-size: 0.72rem;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   HERO DIVIDER
+========================================================= */
+
+.modern-hero-divider {
+    width: 65px;
+    height: 2px;
+
+    margin: 0 auto 30px;
+
+    background: #d6b98c;
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.modern-hero-title {
+    margin: 0;
+
+    font-size: clamp(2.5rem, 5vw, 4.8rem);
+
+    line-height: 1.05;
+
+    letter-spacing: -1.8px;
+
+    font-weight: 700;
+}
+
+.modern-hero-title span {
+    display: block;
+
+    margin-top: 18px;
+
+    color: #d6b98c;
+
+    font-size: 0.68em;
+
+    font-weight: 400;
+
+    letter-spacing: -0.5px;
+}
+
+
+/* =========================================================
+   HERO SUBTITLE
+========================================================= */
+
+.modern-hero-subtitle {
+    margin-top: 30px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-size: 1rem;
+
+    letter-spacing: 0.2px;
+}
+
+.modern-hero-subtitle strong {
+    color: #ffffff;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   INTRODUÇÃO
+========================================================= */
+
+.modern-introduction {
+    padding: 105px 0;
+
+    background: #ffffff;
+}
+
+.modern-introduction .modern-container {
+    width: min(1000px, 92%);
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.modern-section-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+
+    margin-bottom: 55px;
+}
+
+.modern-section-number {
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 58px;
+    height: 58px;
+
+    border: 1px solid #ded7d0;
+
+    border-radius: 50%;
+
+    background: #faf8f5;
+
+    color: #6f4e37;
+
+    font-size: 0.8rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.modern-section-eyebrow {
+    margin-bottom: 7px;
+
+    color: #6f4e37;
+
+    font-size: 0.7rem;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.modern-section-heading h2 {
+    margin: 0;
+
+    color: #2d2926;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    line-height: 1.1;
+
+    letter-spacing: -1px;
+}
+
+
+/* =========================================================
+   INTRO CONTENT
+========================================================= */
+
+.modern-intro-content {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 45px;
+}
+
+
+/* =========================================================
+   PROPÓSITO
+========================================================= */
+
+.modern-intro-purpose {
+    max-width: 850px;
+
+    padding-left: 28px;
+
+    border-left: 3px solid #d6b98c;
+}
+
+.modern-intro-purpose p {
+    margin: 0;
+
+    color: #2d2926;
+
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   COURSE INFORMATION
+========================================================= */
+
+.modern-course-information {
+    overflow: hidden;
+
+    border: 1px solid #ded7d0;
+
+    border-radius: 16px;
+
+    background: #fdfcfb;
+
+    box-shadow:
+        0 15px 45px rgba(45, 41, 38, 0.06);
+}
+
+
+/* =========================================================
+   COURSE HEADER
+========================================================= */
+
+.modern-block-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 28px 30px;
+
+    border-bottom: 1px solid #ded7d0;
+}
+
+.modern-block-header span {
+    color: #d6b98c;
+
+    font-size: 0.72rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.modern-block-header h3 {
+    margin: 0;
+
+    color: #2d2926;
+
+    font-size: 1.35rem;
+}
+
+
+/* =========================================================
+   COURSE DETAILS
+========================================================= */
+
+.modern-course-details {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+.modern-course-details li {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    padding: 25px 30px;
+
+    border-bottom: 1px solid #ded7d0;
+}
+
+.modern-course-details li:nth-child(odd) {
+    border-right: 1px solid #ded7d0;
+}
+
+.modern-course-details li:nth-last-child(-n + 2) {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   DETAIL LABEL
+========================================================= */
+
+.modern-detail-label {
+    color: #6f4e37;
+
+    font-size: 0.68rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   DETAIL VALUE
+========================================================= */
+
+.modern-detail-value {
+    color: #756c65;
+
+    font-size: 0.95rem;
+
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   PARTICIPAÇÃO
+========================================================= */
+
+.modern-participation {
+    max-width: 780px;
+
+    padding: 10px 0;
+}
+
+.modern-small-label {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #6f4e37;
+
+    font-size: 0.68rem;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.modern-participation h3 {
+    margin-bottom: 12px;
+
+    color: #2d2926;
+
+    font-size: 1.7rem;
+
+    line-height: 1.2;
+}
+
+.modern-participation p {
+    max-width: 700px;
+
+    margin: 0;
+
+    color: #756c65;
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.modern-intro-highlight {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    padding: 40px;
+
+    border: 1px solid rgba(111, 78, 55, 0.12);
+
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f5eee7,
+            #eee3d6
+        );
+}
+
+
+/* =========================================================
+   CTA CONTENT
+========================================================= */
+
+.modern-highlight-content {
+    max-width: 650px;
+}
+
+.modern-highlight-label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #6f4e37;
+
+    font-size: 0.68rem;
+
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+}
+
+.modern-highlight-content h3 {
+    margin-bottom: 12px;
+
+    color: #2d2926;
+
+    font-size: 1.8rem;
+
+    line-height: 1.2;
+}
+
+.modern-highlight-content p {
+    margin: 0;
+
+    color: #756c65;
+
+    line-height: 1.7;
+}
+
+.modern-highlight-content strong {
+    color: #2d2926;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+========================================================= */
+
+.modern-btn {
+    flex-shrink: 0;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    min-height: 54px;
+
+    padding: 0 25px;
+
+    border-radius: 9px;
+
+    background: #6f4e37;
+
+    color: #ffffff;
+
+    font-size: 0.9rem;
+
+    font-weight: 700;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.modern-btn span {
+    font-size: 1.2rem;
+
+    transition: transform 0.2s ease;
+}
+
+.modern-btn:hover {
+    transform: translateY(-2px);
+
+    background: #4f3525;
+
+    box-shadow:
+        0 12px 25px rgba(79, 53, 37, 0.18);
+}
+
+.modern-btn:hover span {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   FECHAMENTO
+========================================================= */
+
+.modern-intro-closing {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.modern-intro-closing p {
+    margin: 0;
+
+    color: #756c65;
+
+    font-size: 1rem;
+
+    font-style: italic;
+
+    line-height: 1.7;
+}
+
+.modern-intro-closing > span {
+    color: #d6b98c;
+
+    font-size: 0.8rem;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .modern-hero {
+        min-height: 580px;
+
+        padding: 70px 0;
+    }
+
+    .modern-hero-label {
+        font-size: 0.62rem;
+
+        letter-spacing: 2.5px;
+    }
+
+    .modern-hero-title {
+        font-size: clamp(2.2rem, 10vw, 3.2rem);
+
+        letter-spacing: -1px;
+    }
+
+    .modern-hero-title span {
+        margin-top: 14px;
+
+        font-size: 0.7em;
+    }
+
+    .modern-hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+
+    .modern-introduction {
+        padding: 70px 0;
+    }
+
+
+    .modern-section-heading {
+        align-items: flex-start;
+
+        gap: 15px;
+
+        margin-bottom: 40px;
+    }
+
+    .modern-section-number {
+        width: 48px;
+        height: 48px;
+    }
+
+    .modern-section-eyebrow {
+        font-size: 0.6rem;
+
+        letter-spacing: 2px;
+    }
+
+    .modern-section-heading h2 {
+        font-size: 2rem;
+    }
+
+
+    .modern-intro-content {
+        gap: 35px;
+    }
+
+
+    .modern-intro-purpose {
+        padding-left: 20px;
+    }
+
+    .modern-intro-purpose p {
+        font-size: 1.05rem;
+    }
+
+
+    .modern-block-header {
+        padding: 23px 20px;
+    }
+
+
+    .modern-course-details {
+        grid-template-columns: 1fr;
+    }
+
+    .modern-course-details li {
+        padding: 20px;
+    }
+
+    .modern-course-details li:nth-child(odd) {
+        border-right: none;
+    }
+
+    .modern-course-details li:nth-last-child(-n + 2) {
+        border-bottom: 1px solid #ded7d0;
+    }
+
+    .modern-course-details li:last-child {
+        border-bottom: none;
+    }
+
+
+    .modern-intro-highlight {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 30px 25px;
+
+        gap: 25px;
+    }
+
+    .modern-btn {
+        width: 100%;
+    }
+
+
+    .modern-intro-closing {
+        gap: 8px;
+    }
+
+    .modern-intro-closing p {
+        font-size: 0.9rem;
+    }
+}
+
+.simbolo-ceva-footer {
+    width: 30px;
+    height: auto;
+    display: block;
+    margin: 8px auto 8px auto;
+}
