@@ -1,0 +1,760 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: #faf8f5;
+    color: #2d2926;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================================
+   VARIÁVEIS
+========================================= */
+
+:root {
+    --primary: #6f4e37;
+    --primary-dark: #4f3525;
+    --secondary: #d6b98c;
+
+    --background: #faf8f5;
+    --surface: #ffffff;
+
+    --text: #2d2926;
+    --text-light: #756c65;
+
+    --border: #ded7d0;
+
+    --radius: 14px;
+
+    --shadow:
+        0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: 620px;
+
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(45, 31, 23, 0.78),
+            rgba(45, 31, 23, 0.78)
+        ),
+        url("../assets/images/Ceva\ -\ Átomo\ branco.png") center/cover no-repeat;
+
+    color: rgb(236, 228, 228);
+}
+
+.hero .container {
+    max-width: 850px;
+}
+
+.hero-label {
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+
+    color: var(--secondary);
+}
+
+.hero h1 {
+    font-size: clamp(2.2rem, 5vw, 4.3rem);
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    display: block;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+}
+
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+.btn {
+    display: inline-flex;
+
+    justify-content: center;
+    align-items: center;
+
+    min-height: 50px;
+
+    padding: 0 28px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+}
+
+.hero .btn-primary {
+    background: var(--secondary);
+    color: #2d2926;
+}
+
+.btn-secondary {
+    background: #eee9e4;
+    color: var(--text);
+}
+
+
+/* =========================================
+   SEÇÕES
+========================================= */
+
+.section {
+    padding: 90px 0;
+}
+
+.section-heading {
+    margin-bottom: 45px;
+}
+
+.section-heading.centered {
+    text-align: center;
+}
+
+.section-number {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 0.8rem;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: var(--primary);
+}
+
+.section-heading h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+
+    margin-bottom: 12px;
+}
+
+.section-heading p {
+    color: var(--text-light);
+}
+
+
+/* =========================================
+   INTRODUÇÃO
+========================================= */
+
+.introduction {
+    background: var(--surface);
+}
+
+.intro-text {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    font-size: 1.08rem;
+    color: var(--text-light);
+}
+
+.intro-text p {
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   PILARES
+========================================= */
+
+.pillars {
+    background: #f2ece5;
+}
+
+.pillar-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.pillar-card {
+    padding: 35px;
+
+    background: var(--surface);
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+    text-align: center;
+}
+
+.pillar-icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background: var(--primary);
+    color: white;
+
+    font-weight: bold;
+}
+
+.pillar-card h3 {
+    margin-bottom: 12px;
+
+    font-size: 1.5rem;
+}
+
+.pillar-card p {
+    color: var(--text-light);
+}
+
+
+/* =========================================
+   FORMULÁRIO
+========================================= */
+
+.registration {
+    background: var(--background);
+}
+
+.steps {
+    display: flex;
+
+    justify-content: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 40px;
+}
+
+.step {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    flex: 1;
+
+    color: #aaa;
+}
+
+.step:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+
+    top: 17px;
+    left: 60%;
+
+    width: 80%;
+    height: 2px;
+
+    background: var(--border);
+
+    z-index: 0;
+}
+
+.step span {
+    position: relative;
+
+    z-index: 1;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+
+    background: #e7e0da;
+
+    font-weight: bold;
+}
+
+.step small {
+    margin-top: 8px;
+}
+
+.step.active {
+    color: var(--primary);
+}
+
+.step.active span {
+    background: var(--primary);
+    color: white;
+}
+
+
+/* =========================================
+   FORM STEP
+========================================= */
+
+.form-step {
+    display: none;
+
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    padding: 40px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+
+    background: var(--surface);
+
+    box-shadow: var(--shadow);
+}
+
+.form-step.active {
+    display: block;
+}
+
+.form-step legend {
+    width: 100%;
+
+    margin-bottom: 35px;
+
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.form-description {
+    margin-bottom: 30px;
+
+    color: var(--text-light);
+}
+
+
+/* =========================================
+   CAMPOS
+========================================= */
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+.form-group label span {
+    color: #a23a3a;
+}
+
+.form-group small {
+    display: block;
+
+    margin-top: 7px;
+
+    color: var(--text-light);
+
+    font-size: 0.85rem;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    outline: none;
+
+    background: white;
+
+    color: var(--text);
+
+    transition:
+        border-color 0.2s,
+        box-shadow 0.2s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--primary);
+
+    box-shadow:
+        0 0 0 3px rgba(111, 78, 55, 0.1);
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* =========================================
+   RADIO
+========================================= */
+
+.radio-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.radio-option {
+    display: flex !important;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    padding: 15px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: normal !important;
+
+    transition: background 0.2s;
+}
+
+.radio-option:hover {
+    background: #faf7f4;
+}
+
+.radio-option input {
+    margin-top: 4px;
+}
+
+
+/* =========================================
+   CAMPO CONDICIONAL
+========================================= */
+
+.conditional-field {
+    padding: 20px;
+
+    border-left: 4px solid var(--secondary);
+
+    background: #faf7f4;
+
+    border-radius: 5px;
+}
+
+
+/* =========================================
+   TURNOS
+========================================= */
+
+.turno-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 35px;
+}
+
+.turno-card {
+    cursor: pointer;
+}
+
+.turno-card input {
+    position: absolute;
+
+    opacity: 0;
+}
+
+.turno-content {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 220px;
+
+    padding: 25px;
+
+    border: 2px solid var(--border);
+
+    border-radius: var(--radius);
+
+    text-align: center;
+
+    transition:
+        border-color 0.2s,
+        background 0.2s,
+        transform 0.2s;
+}
+
+.turno-content strong {
+    margin-bottom: 15px;
+
+    font-size: 2rem;
+
+    color: var(--primary);
+}
+
+.turno-content b {
+    font-size: 1.3rem;
+
+    text-transform: uppercase;
+}
+
+.turno-content small {
+    margin-top: 5px;
+
+    font-size: 1rem;
+}
+
+.turno-content em {
+    margin-top: 15px;
+
+    color: var(--text-light);
+
+    font-size: 0.85rem;
+
+    font-style: normal;
+}
+
+.turno-card input:checked + .turno-content {
+    border-color: var(--primary);
+
+    background: #f5eee7;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   COMPROMISSO
+========================================= */
+
+.commitment {
+    padding: 30px;
+
+    margin-bottom: 30px;
+
+    border-radius: var(--radius);
+
+    background: #f5eee7;
+}
+
+.commitment h3 {
+    margin-bottom: 10px;
+}
+
+.commitment p {
+    margin-bottom: 25px;
+
+    color: var(--text-light);
+}
+
+.checkbox-option {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.checkbox-option input {
+    margin-top: 5px;
+
+    width: 18px;
+    height: 18px;
+}
+
+
+/* =========================================
+   AÇÕES DO FORMULÁRIO
+========================================= */
+
+.form-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    margin-top: 35px;
+}
+
+
+/* =========================================
+   RODAPÉ
+========================================= */
+
+.footer {
+    padding: 40px 0;
+
+    background: #2d2926;
+
+    color: white;
+
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 5px;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .section {
+        padding: 65px 0;
+    }
+
+    .pillar-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .turno-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-step {
+        padding: 25px 20px;
+    }
+
+    .steps {
+        margin-bottom: 30px;
+    }
+
+    .step small {
+        font-size: 0.7rem;
+    }
+
+    .form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .form-actions .btn {
+        width: 100%;
+    }
+
+    .step:not(:last-child)::after {
+        width: 65%;
+    }
+
+}
+
+legend {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 35px;
+}

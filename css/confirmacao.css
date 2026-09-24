@@ -1,0 +1,417 @@
+/* =========================================================
+   VARIÁVEIS
+========================================================= */
+
+:root {
+    --black: #08090a;
+    --black-soft: #111315;
+
+    --white: #ffffff;
+    --white-soft: #f5f7fa;
+
+    --blue: #1769e0;
+    --blue-dark: #0d4fae;
+    --blue-light: #eaf2ff;
+
+    --gold: #c9a66b;
+    --gold-soft: #fbf6ec;
+
+    --gray-100: #f1f3f5;
+    --gray-200: #e1e5e9;
+    --gray-600: #5f6872;
+
+    --success: #1769e0;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+
+    min-height: 100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: var(--black);
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.72),
+            rgba(0, 0, 0, 0.72)
+        );
+}
+
+
+/* =========================================================
+   PÁGINA
+========================================================= */
+
+.confirmation-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 24px 16px;
+}
+
+
+/* =========================================================
+   CARD PRINCIPAL
+========================================================= */
+
+.confirmation-card {
+
+    width: 100%;
+    max-width: 720px;
+
+    padding: 32px 20px;
+
+    background: var(--white);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.25);
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   ÍCONE
+========================================================= */
+
+.success-icon {
+
+    width: 68px;
+    height: 68px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--blue);
+
+    color: var(--white);
+
+    font-size: 2rem;
+    font-weight: 800;
+
+    box-shadow:
+        0 8px 20px rgba(23, 105, 224, 0.25);
+}
+
+
+/* =========================================================
+   CABEÇALHO
+========================================================= */
+
+.confirmation-kicker {
+
+    margin: 0 0 8px;
+
+    color: var(--blue);
+
+    font-size: 0.75rem;
+    font-weight: 800;
+
+    letter-spacing: 0.14em;
+
+    text-transform: uppercase;
+}
+
+
+.confirmation-header h1 {
+
+    margin: 0;
+
+    color: var(--black);
+
+    font-size: 1.8rem;
+
+    line-height: 1.2;
+}
+
+
+.confirmation-intro {
+
+    max-width: 560px;
+
+    margin: 16px auto 0;
+
+    color: var(--gray-600);
+
+    font-size: 1rem;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   CONTEÚDO
+========================================================= */
+
+.confirmation-content {
+
+    display: grid;
+
+    gap: 16px;
+
+    margin-top: 28px;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   BOX DE INFORMAÇÃO
+========================================================= */
+
+.info-box {
+
+    padding: 20px;
+
+    background: var(--gold-soft);
+
+    border: 1px solid var(--gold-soft);
+
+    border-left: 4px solid var(--gold);
+
+    border-radius: 12px;
+}
+
+
+.info-box h2 {
+
+    margin: 0 0 10px;
+
+    color: var(--black);
+
+    font-size: 1.05rem;
+}
+
+
+.info-box p {
+
+    margin: 7px 0;
+
+    color: var(--gray-600);
+
+    font-size: 0.95rem;
+
+    line-height: 1.55;
+}
+
+
+.info-box strong {
+
+    color: var(--black);
+}
+
+
+/* =========================================================
+   LISTA
+========================================================= */
+
+.info-box ul {
+
+    margin: 0;
+
+    padding-left: 20px;
+
+    color: var(--gray-600);
+}
+
+
+.info-box li {
+
+    margin-bottom: 8px;
+
+    line-height: 1.5;
+}
+
+
+.info-box li:last-child {
+
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   MENSAGEM FINAL
+========================================================= */
+
+.final-message {
+
+    margin-top: 28px;
+
+    padding: 20px;
+
+    background: var(--blue-light);
+
+    border-radius: 12px;
+}
+
+
+.final-message p {
+
+    margin: 0;
+
+    color: var(--gold);
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   BOTÃO
+========================================================= */
+
+.confirmation-actions {
+
+    margin-top: 24px;
+}
+
+
+.button {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 50px;
+
+    width: 100%;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.button-primary {
+
+    background: var(--blue);
+
+    color: var(--white);
+
+    box-shadow:
+        0 6px 16px rgba(23, 105, 224, 0.22);
+}
+
+
+.button-primary:hover {
+
+    background: var(--blue-dark);
+
+    transform: translateY(-1px);
+}
+
+
+.button-primary:focus-visible {
+
+    outline: 3px solid var(--blue-light);
+
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (min-width: 600px) {
+
+    .confirmation-page {
+        padding: 40px 24px;
+    }
+
+
+    .confirmation-card {
+        padding: 44px 40px;
+    }
+
+
+    .confirmation-header h1 {
+        font-size: 2.2rem;
+    }
+
+
+    .button {
+        width: auto;
+
+        min-width: 220px;
+    }
+
+}
+
+
+/* =========================================================
+   DESKTOP
+========================================================= */
+
+@media (min-width: 900px) {
+
+    .confirmation-page {
+        padding: 60px 24px;
+    }
+
+
+    .confirmation-card {
+        padding: 52px 56px;
+    }
+
+
+    .success-icon {
+        width: 76px;
+        height: 76px;
+
+        font-size: 2.2rem;
+    }
+
+
+    .confirmation-header h1 {
+        font-size: 2.5rem;
+    }
+
+}
